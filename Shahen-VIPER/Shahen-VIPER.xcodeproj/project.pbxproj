@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E11F01692BA98A1A008DD987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F01682BA98A1A008DD987 /* AppDelegate.swift */; };
+		E11F016B2BA98A1A008DD987 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F016A2BA98A1A008DD987 /* SceneDelegate.swift */; };
+		E11F01702BA98A1A008DD987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11F016E2BA98A1A008DD987 /* Main.storyboard */; };
+		E11F01722BA98A1F008DD987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11F01712BA98A1F008DD987 /* Assets.xcassets */; };
+		E11F01752BA98A1F008DD987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11F01732BA98A1F008DD987 /* LaunchScreen.storyboard */; };
+		E11F01832BA98FF1008DD987 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F01822BA98FF1008DD987 /* DashboardVC.swift */; };
+		E11F01852BA99002008DD987 /* OrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F01842BA99002008DD987 /* OrderHistoryVC.swift */; };
+		E11F01872BA9900E008DD987 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F01862BA9900E008DD987 /* MoreVC.swift */; };
+		E11F01892BA994E7008DD987 /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F01882BA994E7008DD987 /* DashboardInteractor.swift */; };
+		E11F018B2BA994F3008DD987 /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F018A2BA994F3008DD987 /* DashboardPresenter.swift */; };
+		E11F018D2BA99501008DD987 /* DashboardEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F018C2BA99501008DD987 /* DashboardEntity.swift */; };
+		E11F018F2BA99516008DD987 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11F018E2BA99516008DD987 /* DashboardRouter.swift */; };
+		E1437F4A2BA9BCBB00BD25C6 /* HomeGridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1437F482BA9BCBB00BD25C6 /* HomeGridViewCell.swift */; };
+		E1437F4B2BA9BCBB00BD25C6 /* HomeGridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1437F492BA9BCBB00BD25C6 /* HomeGridViewCell.xib */; };
+		E1CB4F1A2BAAA63700C82432 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB4F182BAAA63700C82432 /* GridViewCell.swift */; };
+		E1CB4F1B2BAAA63700C82432 /* GridViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CB4F192BAAA63700C82432 /* GridViewCell.xib */; };
+		E1CB4F1E2BAAC28B00C82432 /* NewOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB4F1C2BAAC28B00C82432 /* NewOrderCell.swift */; };
+		E1CB4F1F2BAAC28B00C82432 /* NewOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CB4F1D2BAAC28B00C82432 /* NewOrderCell.xib */; };
+		E1CB4F222BAAD88B00C82432 /* CurrentOrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CB4F202BAAD88B00C82432 /* CurrentOrdersCell.swift */; };
+		E1CB4F232BAAD88B00C82432 /* CurrentOrdersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1CB4F212BAAD88B00C82432 /* CurrentOrdersCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E11F01652BA98A1A008DD987 /* Shahen-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shahen-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E11F01682BA98A1A008DD987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E11F016A2BA98A1A008DD987 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E11F016F2BA98A1A008DD987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E11F01712BA98A1F008DD987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E11F01742BA98A1F008DD987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E11F01762BA98A1F008DD987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E11F01822BA98FF1008DD987 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		E11F01842BA99002008DD987 /* OrderHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryVC.swift; sourceTree = "<group>"; };
+		E11F01862BA9900E008DD987 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		E11F01882BA994E7008DD987 /* DashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		E11F018A2BA994F3008DD987 /* DashboardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		E11F018C2BA99501008DD987 /* DashboardEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardEntity.swift; sourceTree = "<group>"; };
+		E11F018E2BA99516008DD987 /* DashboardRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		E1437F482BA9BCBB00BD25C6 /* HomeGridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGridViewCell.swift; sourceTree = "<group>"; };
+		E1437F492BA9BCBB00BD25C6 /* HomeGridViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeGridViewCell.xib; sourceTree = "<group>"; };
+		E1CB4F182BAAA63700C82432 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		E1CB4F192BAAA63700C82432 /* GridViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GridViewCell.xib; sourceTree = "<group>"; };
+		E1CB4F1C2BAAC28B00C82432 /* NewOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderCell.swift; sourceTree = "<group>"; };
+		E1CB4F1D2BAAC28B00C82432 /* NewOrderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewOrderCell.xib; sourceTree = "<group>"; };
+		E1CB4F202BAAD88B00C82432 /* CurrentOrdersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentOrdersCell.swift; sourceTree = "<group>"; };
+		E1CB4F212BAAD88B00C82432 /* CurrentOrdersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentOrdersCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E11F01622BA98A1A008DD987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E11F015C2BA98A1A008DD987 = {
+			isa = PBXGroup;
+			children = (
+				E11F01672BA98A1A008DD987 /* Shahen-VIPER */,
+				E11F01662BA98A1A008DD987 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E11F01662BA98A1A008DD987 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E11F01652BA98A1A008DD987 /* Shahen-VIPER.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E11F01672BA98A1A008DD987 /* Shahen-VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				E11F017E2BA98FBA008DD987 /* Modules */,
+				E11F017C2BA98DB4008DD987 /* Storyboard */,
+				E11F017D2BA98DBD008DD987 /* Support */,
+				E11F01712BA98A1F008DD987 /* Assets.xcassets */,
+				E11F01762BA98A1F008DD987 /* Info.plist */,
+			);
+			path = "Shahen-VIPER";
+			sourceTree = "<group>";
+		};
+		E11F017C2BA98DB4008DD987 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E11F016E2BA98A1A008DD987 /* Main.storyboard */,
+				E11F01732BA98A1F008DD987 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E11F017D2BA98DBD008DD987 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E11F01682BA98A1A008DD987 /* AppDelegate.swift */,
+				E11F016A2BA98A1A008DD987 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E11F017E2BA98FBA008DD987 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E11F01812BA98FD7008DD987 /* More */,
+				E11F01802BA98FCE008DD987 /* History */,
+				E11F017F2BA98FC1008DD987 /* DashBoard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E11F017F2BA98FC1008DD987 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E1CB4F172BAAA55000C82432 /*  CollectionViewCells */,
+				E1437F472BA9BC8700BD25C6 /* TableViewCells */,
+				E11F01822BA98FF1008DD987 /* DashboardVC.swift */,
+				E11F01882BA994E7008DD987 /* DashboardInteractor.swift */,
+				E11F018A2BA994F3008DD987 /* DashboardPresenter.swift */,
+				E11F018C2BA99501008DD987 /* DashboardEntity.swift */,
+				E11F018E2BA99516008DD987 /* DashboardRouter.swift */,
+			);
+			path = DashBoard;
+			sourceTree = "<group>";
+		};
+		E11F01802BA98FCE008DD987 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				E11F01842BA99002008DD987 /* OrderHistoryVC.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		E11F01812BA98FD7008DD987 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				E11F01862BA9900E008DD987 /* MoreVC.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		E1437F472BA9BC8700BD25C6 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E1437F482BA9BCBB00BD25C6 /* HomeGridViewCell.swift */,
+				E1437F492BA9BCBB00BD25C6 /* HomeGridViewCell.xib */,
+				E1CB4F1C2BAAC28B00C82432 /* NewOrderCell.swift */,
+				E1CB4F1D2BAAC28B00C82432 /* NewOrderCell.xib */,
+				E1CB4F202BAAD88B00C82432 /* CurrentOrdersCell.swift */,
+				E1CB4F212BAAD88B00C82432 /* CurrentOrdersCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		E1CB4F172BAAA55000C82432 /*  CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E1CB4F182BAAA63700C82432 /* GridViewCell.swift */,
+				E1CB4F192BAAA63700C82432 /* GridViewCell.xib */,
+			);
+			path = " CollectionViewCells";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E11F01642BA98A1A008DD987 /* Shahen-VIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11F01792BA98A1F008DD987 /* Build configuration list for PBXNativeTarget "Shahen-VIPER" */;
+			buildPhases = (
+				E11F01612BA98A1A008DD987 /* Sources */,
+				E11F01622BA98A1A008DD987 /* Frameworks */,
+				E11F01632BA98A1A008DD987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shahen-VIPER";
+			productName = "Shahen-VIPER";
+			productReference = E11F01652BA98A1A008DD987 /* Shahen-VIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E11F015D2BA98A1A008DD987 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					E11F01642BA98A1A008DD987 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E11F01602BA98A1A008DD987 /* Build configuration list for PBXProject "Shahen-VIPER" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E11F015C2BA98A1A008DD987;
+			productRefGroup = E11F01662BA98A1A008DD987 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E11F01642BA98A1A008DD987 /* Shahen-VIPER */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E11F01632BA98A1A008DD987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11F01752BA98A1F008DD987 /* LaunchScreen.storyboard in Resources */,
+				E1CB4F1B2BAAA63700C82432 /* GridViewCell.xib in Resources */,
+				E11F01722BA98A1F008DD987 /* Assets.xcassets in Resources */,
+				E1CB4F1F2BAAC28B00C82432 /* NewOrderCell.xib in Resources */,
+				E11F01702BA98A1A008DD987 /* Main.storyboard in Resources */,
+				E1437F4B2BA9BCBB00BD25C6 /* HomeGridViewCell.xib in Resources */,
+				E1CB4F232BAAD88B00C82432 /* CurrentOrdersCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E11F01612BA98A1A008DD987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E11F01692BA98A1A008DD987 /* AppDelegate.swift in Sources */,
+				E11F01832BA98FF1008DD987 /* DashboardVC.swift in Sources */,
+				E11F01852BA99002008DD987 /* OrderHistoryVC.swift in Sources */,
+				E1437F4A2BA9BCBB00BD25C6 /* HomeGridViewCell.swift in Sources */,
+				E11F016B2BA98A1A008DD987 /* SceneDelegate.swift in Sources */,
+				E11F018B2BA994F3008DD987 /* DashboardPresenter.swift in Sources */,
+				E1CB4F1A2BAAA63700C82432 /* GridViewCell.swift in Sources */,
+				E11F018D2BA99501008DD987 /* DashboardEntity.swift in Sources */,
+				E11F01872BA9900E008DD987 /* MoreVC.swift in Sources */,
+				E11F018F2BA99516008DD987 /* DashboardRouter.swift in Sources */,
+				E11F01892BA994E7008DD987 /* DashboardInteractor.swift in Sources */,
+				E1CB4F222BAAD88B00C82432 /* CurrentOrdersCell.swift in Sources */,
+				E1CB4F1E2BAAC28B00C82432 /* NewOrderCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E11F016E2BA98A1A008DD987 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11F016F2BA98A1A008DD987 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E11F01732BA98A1F008DD987 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E11F01742BA98A1F008DD987 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E11F01772BA98A1F008DD987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E11F01782BA98A1F008DD987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E11F017A2BA98A1F008DD987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Shahen-VIPER/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brainvire.Shahen-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E11F017B2BA98A1F008DD987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Shahen-VIPER/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brainvire.Shahen-VIPER";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E11F01602BA98A1A008DD987 /* Build configuration list for PBXProject "Shahen-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11F01772BA98A1F008DD987 /* Debug */,
+				E11F01782BA98A1F008DD987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11F01792BA98A1F008DD987 /* Build configuration list for PBXNativeTarget "Shahen-VIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E11F017A2BA98A1F008DD987 /* Debug */,
+				E11F017B2BA98A1F008DD987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E11F015D2BA98A1A008DD987 /* Project object */;
+}
